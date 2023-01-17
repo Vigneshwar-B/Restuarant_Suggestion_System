@@ -23,7 +23,7 @@ The entire code has been developed using Python programming language and is host
 ### How to run the project 🚀:
 
   1. Open the `Terminal`.
-  2. Clone the repository by entering `$ git clone https://github.com/shsarv/Restaurant-Recommendation-System.git`.
+  2. Clone the repository by entering `$ git clone https://github.com/Vigneshwar-B/Restaurant-Recommendation-System.git`.
   3. Ensure that `Python3` and `pip` are installed on the system.
   4. change the diectory to repository name using  `$ cd [Repository name]`.
   4. Create a `virtualenv` by executing the following command: `virtualenv env`.
