@@ -3,8 +3,9 @@
 
 This repository contains code for Recommendation of differents restaurants. Developed using Flask and python. Website is hosted on heroku.
 
+Project is deployed to cloud sir using python anywhere 
 
-It's live at **https://restaurants-spotter.herokuapp.com/  .**
+Link: http://restaurantrider.pythonanywhere.com/ 
 
 ![](https://img.shields.io/badge/python-3.6%20|%203.7%20|%203.8-FFFC00?style=flat-circle&logo=python&logoColor=309698)
 ![](https://img.shields.io/github/license/shsarv/Restaurant-Recommendation-System?color=9900cc&logoColor=9900cc)
@@ -16,35 +17,8 @@ It's live at **https://restaurants-spotter.herokuapp.com/  .**
 
 ### 📂 Structure
 
-The directory contains web sub directories and a sub directory for hosting model and other scripts:
 
-1. [app.py](https://github.com/shsarv/Restaurant-Recommendation-System/blob/main/app.py) The file which contains all the main backend operations of the website and used to run the flask server locally.
-   
-2. [Procfile](https://github.com/shsarv/Restaurant-Recommendation-System/blob/main/Procfile) for setting up heroku.
-
-3. [requirement.txt](https://github.com/shsarv/Restaurant-Recommendation-System/blob/main/requirements.txt) contains all the dependencies.
-
-4. [templates](https://github.com/shsarv/Restaurant-Recommendation-System/blob/main/templates) contains the html file.
-
-      |- - - [home.html](https://github.com/shsarv/Restaurant-Recommendation-System/blob/main/templates/home.html) contains home page.
-      
-      |- - - [search.html](https://github.com/shsarv/Restaurant-Recommendation-System/blob/main/templates/search.html) contains search page.
-
-5. [static](https://github.com/shsarv/Restaurant-Recommendation-System/blob/main/static) contains the css file and images.
-
-      |- - - [home.css](https://github.com/shsarv/Restaurant-Recommendation-System/blob/main/static/home.css) contains Styling of home page.
-      
-      |- - - [search.css](https://github.com/shsarv/Restaurant-Recommendation-System/blob/main/static/search.css) contains Styling of Search page/ result page.
-      
-      |- - - [backgrund1.jpg](https://github.com/shsarv/Restaurant-Recommendation-System/blob/main/static/background1.jpg) contains background image of web pages.
-
-6. [main_rest.csv](https://github.com/shsarv/Restaurant-Recommendation-System/blob/main/main_rest.csv) contains the raw data.
-
-7. [food1.csv](https://github.com/shsarv/Restaurant-Recommendation-System/blob/main/food1.csv) contains cleaned data.
-  
-### Codebase <img src="https://www.flaticon.com/svg/static/icons/svg/3565/3565585.svg" width="24px">
-
-The entire code has been developed using Python programming language and is hosted on Heroku. The analysis and model is developed using ScikitLearn library. The website is developed using Flask. 
+The entire code has been developed using Python programming language and is hosted on Python anywhere. The analysis and model is developed using ScikitLearn library. The website is developed using Flask. 
 
 ### How to run the project 🚀:
 
@@ -60,7 +34,7 @@ The entire code has been developed using Python programming language and is host
   
 ### Dependencies <img src="https://www.flaticon.com/svg/static/icons/svg/2621/2621122.svg" width="24px">
 
-The following dependencies can be found in [requirements.txt](https://github.com/shsarv/Restaurant-Recommendation-System/blob/main/requirements.txt):
+The following dependencies can be found in [requirements.txt]
 
   1. [scikit-learn](https://scikit-learn.org/)
   2. [Flask](https://palletsprojects.com/p/flask/)
