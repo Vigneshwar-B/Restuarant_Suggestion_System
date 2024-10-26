@@ -1,8 +1,5 @@
 # Restaurant Recommendation System
 
- <img src="https://image.flaticon.com/icons/png/512/52/52172.png" width="40px">
-
-
 
 This repository contains code for recommending restaurants based on user preferences. Developed using Flask and Python, the system leverages cosine similarity to suggest personalized dining options. The website is hosted on Python Anywhere, with the live app accessible at [Restaurant Rider](http://restaurantrider.pythonanywhere.com/).
 
