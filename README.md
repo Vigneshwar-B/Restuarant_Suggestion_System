@@ -1,52 +1,108 @@
-# Restaurants Recommendation System  <img src="https://image.flaticon.com/icons/png/512/52/52172.png" width="40px">
+# Restaurant Recommendation System
+
+ <img src="https://image.flaticon.com/icons/png/512/52/52172.png" width="40px">
 
 
-This repository contains code for Recommendation of differents restaurants. Developed using Flask and python. Website is hosted on heroku.
 
-Project is deployed to cloud sir using python anywhere 
+This repository contains code for recommending restaurants based on user preferences. Developed using Flask and Python, the system leverages cosine similarity to suggest personalized dining options. The website is hosted on Python Anywhere, with the live app accessible at [Restaurant Rider](http://restaurantrider.pythonanywhere.com/).
 
-Link: http://restaurantrider.pythonanywhere.com/ 
+## Project Overview
 
-![](https://img.shields.io/badge/python-3.6%20|%203.7%20|%203.8-FFFC00?style=flat-circle&logo=python&logoColor=309698)
-![](https://img.shields.io/github/license/shsarv/Restaurant-Recommendation-System?color=9900cc&logoColor=9900cc)
-![](https://img.shields.io/badge/build-flask%201.1.2-blue?style=flat-circle&logo=flask&logoColor=white)
-![](https://img.shields.io/github/repo-size/shsarv/Restaurant-Recommendation-System?color=e02c73&style=flat-circle)
-![](https://img.shields.io/tokei/lines/github/shsarv/Restaurant-Recommendation-System?color=orange&logoColor=blue&style=flat-circle)
-![](https://img.shields.io/github/languages/top/shsarv/Restaurant-Recommendation-System?color=blueviolet&style=flat-circle)
+This project aims to provide users with customized restaurant recommendations by considering factors such as cuisine, budget, locality, and the number of people. The recommendation engine is developed with Scikit-learn’s cosine similarity functionality for NLP, while Flask enables a seamless web-based interface.
 
+## Project Structure
 
-### 📂 Structure
+```plaintext
+.
+├── app.py                  # Main application file
+├── requirements.txt        # Dependencies
+├── templates/              # HTML templates (home.html, search.html)
+├── static/                 # Static files (CSS, JS)
+├── food1.csv               # Dataset used for recommendations
+└── README.md               # Project documentation
+```
 
+## Features
 
-The entire code has been developed using Python programming language and is hosted on Python anywhere. The analysis and model is developed using ScikitLearn library. The website is developed using Flask. 
+- **Customized Recommendations**: Based on user inputs for budget, locality, cuisine, and dining preferences.
+- **Cosine Similarity**: Utilized to provide similar restaurant options using NLP.
+- **Responsive Web Interface**: Built with Flask for seamless interaction.
 
-### How to run the project 🚀:
+## Getting Started
 
-  1. Open the `Terminal`.
-  2. Clone the repository by entering `$ git clone https://github.com/Vigneshwar-B/Restaurant-Recommendation-System.git`.
-  3. Ensure that `Python3` and `pip` are installed on the system.
-  4. change the diectory to repository name using  `$ cd [Repository name]`.
-  4. Create a `virtualenv` by executing the following command: `virtualenv env`.
-  5. Activate the `env` virtual environment by executing the follwing command: `source env/bin/activate`.
-  6. Enter the cloned repository directory and execute `pip install -r requirements.txt`.
-  7. Now, execute the following command: `flask run` and it will point to the `localhost` server with the port `5000`.
-  8. Enter the `IP Address: http://localhost:5000` on a web browser and use the application.
-  
-### Dependencies <img src="https://www.flaticon.com/svg/static/icons/svg/2621/2621122.svg" width="24px">
+### Prerequisites
+- Python 3.x
+- Flask
+- Scikit-learn
+- Pandas
+- Numpy
 
-The following dependencies can be found in [requirements.txt]
+### Installation
 
-  1. [scikit-learn](https://scikit-learn.org/)
-  2. [Flask](https://palletsprojects.com/p/flask/)
-  3. [pandas](https://pandas.pydata.org/)
-  4. [numpy](http://www.numpy.org/)
-  5. [scikit-learn](https://scikit-learn.org/stable/index.html)
-  6. [gunicorn](https://gunicorn.org/)
-  
-### Cosine Similirity is used for recommendation purpose using Scikit-learn library.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Vigneshwar-B/Restaurant-Recommendation-System.git
+   cd Restaurant-Recommendation-System
+   ```
 
+2. Set up a virtual environment:
+   ```bash
+   python3 -m venv env
+   source env/bin/activate
+   ```
 
-<center><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRa3ATcSqTT8I671rT7KAjWSDoAq70w6nDStA&usqp=CAU"></center>
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Running the Application
+
+1. Start the Flask application:
+   ```bash
+   flask run
+   ```
+
+2. Open a browser and navigate to `http://localhost:5000` to access the application.
+
+## Used Technologies
+
+- **Python**: Core programming language for backend development.
+- **Flask**: Web framework for creating the RESTful service.
+- **Scikit-learn**: Used for recommendation algorithms.
+- **Pandas & Numpy**: Data manipulation and processing.
+- **Gunicorn**: Production server for handling application requests.
+
+## Project Workflow
+
+### Recommendation Logic
+
+The recommendation function `rest_rec` uses:
+- **Locality** and **Cuisine Filters**: Filters based on user’s locality and cuisine preferences.
+- **Cosine Similarity**: Computes similarity between restaurants based on highlights.
+- **Budget Constraints**: Filters based on user-specified budget per person.
+
+### Core Functions
+
+- `fav()`: Uses cosine similarity to get a list of similar restaurants based on user preferences.
+- `rest_rec()`: Filters restaurants based on user’s cost, locality, and cuisine preferences.
+- `calc()`: Aggregates results from the above functions for display.
+
+## Usage
+
+1. **Homepage**: Enter details such as budget, cuisine, and locality.
+2. **Search Results**: View restaurant recommendations tailored to the input criteria.
+3. **Recommendation Method**: Utilizes cosine similarity to suggest top matches.
+
+## Deployment
+
+The application is hosted on Python Anywhere. For production use, configure environment variables and server settings according to your hosting service’s guidelines.
+
+## How to Contribute
+
+1. Fork the repository and create a new branch for your feature.
+2. Make your modifications.
+3. Submit a pull request with a summary of your changes.
 
 
 ### References <img src="https://www.flaticon.com/svg/static/icons/svg/1420/1420886.svg" width="24px">
@@ -57,5 +113,12 @@ The following dependencies can be found in [requirements.txt]
 4. https://towardsdatascience.com/cosine-similarity-how-does-it-measure-the-similarity-maths-behind-and-usage-in-python-50ad30aad7db
 5. https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/
 6. Machine Learning course- https://www.coursera.org/learn/machine-learning/
+
+## Developer Details
+
+- **Developer**: Vigneshwar B.
+- **GitHub**: [Vigneshwar-B](https://github.com/Vigneshwar-B)
+- **Contact**: vigneshbw2002@gmail.com
+
 
 
