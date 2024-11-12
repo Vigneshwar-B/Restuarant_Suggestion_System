@@ -10,6 +10,10 @@ lko_rest = pd.read_csv("food1.csv")
 
 
 
+
+
+
+
 def fav(lko_rest1):
     lko_rest1 = lko_rest1.reset_index()
     from sklearn.feature_extraction.text import CountVectorizer
